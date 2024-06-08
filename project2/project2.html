@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON and AJAX Project 2</title>
+  <style>
+    .input-field {
+      margin-bottom: 1rem;
+    }
+    .input-field p {
+      margin: 0;
+    }
+    input[type="text"] {
+      border: 1px solid #aaa;
+      padding: 4px;
+      border-radius: 4px;
+      height: 2rem;
+      line-height: 1;
+      font-size: 1.2rem;
+    }
+    input[type="text"][name="zipcode"] {
+      width: 8em;
+    }
+    input[type="text"][name="city"] {
+      width: 20em;
+    }
+    button {
+      font-size: 1.2rem;
+      border: 1px solid #aaa;
+      background-color: #eee;
+      height: 42px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>JSON and AJAX Project 2</h1>
+
+  <form action="" method="post" id="contact-form" novalidate>
+    <div class="input-field">
+      <p>郵便番号</p>
+      <input type="text" name="zipcode" maxlength="8">
+      <button type="button" id="search-btn">住所検索</button>
+    </div>
+    <div class="input-field">
+      <p>都道府県</p>
+      <input type="text" name="pref">
+    </div>
+    <div class="input-field">
+      <p>市町村名</p>
+      <input type="text" name="city">
+    </div>
+  </form>
+
+  <script src="js/project2.js"></script>
+
+</body>
+
+</html>
