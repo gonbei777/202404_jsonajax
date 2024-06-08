@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON and AJAX</title>
+  <style>
+    #btn {
+      background-color: firebrick;
+      color: white;
+      border: none;
+      padding: 1em;
+      border-radius: 4px;
+    }
+
+    #btn[disabled] {
+      pointer-events: none;
+      background-color: rgba(178 34 34 / .3);
+    }
+
+    #car-info {
+      padding: 2rem 0;
+    }
+
+    #car-info p {
+      border-bottom: 1px solid #ddd;
+      padding: .5em 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>JSON and AJAX</h1>
+
+  <div>
+    <button id="btn">データを3件ずつ取得する</button>
+  </div>
+
+  <div id="car-info"></div>
+
+  <script src="js/jsonajax.js"></script>
+
+</body>
+
+</html>
